@@ -44,7 +44,6 @@ export const expert = defineType({
         ],
         preview: {select: {title: 'label', subtitle: 'text'}},
       })],
-      validation: (Rule) => Rule.required().min(1).max(6),
     }),
     defineField({name: 'portrait', title: 'Основное фото эксперта', description: 'Портрет в разделе «Обо мне».', type: 'reference', to: [{type: 'media'}], group: 'media', options: {filter: 'usage == "portrait"'}, validation: (Rule) => [Rule.required(), Rule.custom(validateReferencedMediaAlt)]}),
     defineField({name: 'workPhoto', title: 'Дополнительное фото эксперта', description: 'Используется в Speech Lab, если там не выбрано отдельное изображение.', type: 'reference', to: [{type: 'media'}], group: 'media', options: {filter: 'usage in ["section", "portrait"]'}, validation: (Rule) => Rule.custom(validateReferencedMediaAlt)}),
