@@ -266,7 +266,9 @@ export default function LeadFormSection({config = CONFIG_CMS, sectionRef}) {
             />
             <div>
               <label htmlFor="lead-consent" className="text-xs font-sans text-stone-400 leading-relaxed">
-                {formConfig.legalPrefix}<a data-preview-target="form-policy-link" href={config.legal.privacyPolicyLink} target="_blank" rel="noreferrer" className="ui-text-link text-[#C9A84C] underline underline-offset-2">
+                {formConfig.legalPrefix}
+{' '}
+<a data-preview-target="form-policy-link" href={config.legal.privacyPolicyLink} target="_blank" rel="noreferrer" className="ui-text-link text-[#C9A84C] underline underline-offset-2">
                   {formConfig.legalLinkLabel}
                 </a>{formConfig.legalSuffix}
               </label>

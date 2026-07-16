@@ -45,7 +45,7 @@ const sanityContentSnapshot = {
       ],
       "description": "",
       "eyebrow": "// Результаты обучения",
-      "title": "Что станет легче после обучения"
+      "title": "Чему вы научитесь?"
     },
     "experience": {
       "cards": [
@@ -99,10 +99,38 @@ const sanityContentSnapshot = {
       "facts": null,
       "founderStatus": "Основатель Speaker One",
       "name": "Андрей Чернышев",
-      "portrait": null,
+      "portrait": {
+        "_id": "media-portrait",
+        "_type": "media",
+        "alt": "Андрей Чернышев в студии",
+        "crop": null,
+        "dimensions": {
+          "_type": "sanity.imageDimensions",
+          "aspectRatio": 0.66650390625,
+          "height": 2048,
+          "width": 1365
+        },
+        "hotspot": null,
+        "title": "Основное фото эксперта",
+        "url": "https://cdn.sanity.io/images/2qt9p4bo/production/cd64c2e471b956dcd9ea7e13395cb8b0b5a5616f-1365x2048.jpg"
+      },
       "role": "Наставник по ораторскому мастерству и публичным выступлениям",
       "telegramUrl": null,
-      "workPhoto": null
+      "workPhoto": {
+        "_id": "media-work",
+        "_type": "media",
+        "alt": "Андрей Чернышев за ноутбуком во время подготовки к выступлению",
+        "crop": null,
+        "dimensions": {
+          "_type": "sanity.imageDimensions",
+          "aspectRatio": 0.66650390625,
+          "height": 2048,
+          "width": 1365
+        },
+        "hotspot": null,
+        "title": "Дополнительное фото эксперта",
+        "url": "https://cdn.sanity.io/images/2qt9p4bo/production/19097eac2bf469ebb5ee74dbbfec5062c541b21d-1365x2048.jpg"
+      }
     },
     "footer": {
       "brandName": "Speaker One",
@@ -174,7 +202,21 @@ const sanityContentSnapshot = {
       "expertRole": "Наставник по ораторскому мастерству и публичным выступлениям.",
       "eyebrow": "SPEAKER ONE · ОБУЧЕНИЕ ОРАТОРСКОМУ МАСТЕРСТВУ",
       "founderLabel": "Основатель SPEAKER ONE",
-      "image": null,
+      "image": {
+        "_id": "media-hero",
+        "_type": "media",
+        "alt": "Андрей Чернышев, основатель Speaker One",
+        "crop": null,
+        "dimensions": {
+          "_type": "sanity.imageDimensions",
+          "aspectRatio": 0.66650390625,
+          "height": 2048,
+          "width": 1365
+        },
+        "hotspot": null,
+        "title": "Главное фото первого экрана",
+        "url": "https://cdn.sanity.io/images/2qt9p4bo/production/36a3c83ba57b565337dee8020dd193fafc161a35-1365x2048.jpg"
+      },
       "primaryButtonAction": {
         "actionType": "form",
         "externalUrl": null,
@@ -189,7 +231,7 @@ const sanityContentSnapshot = {
     "leadFormContent": {
       "consentRequiredMessage": "Подтвердите согласие на обработку персональных данных.",
       "contactHint": "От 3 до 120 символов.",
-      "contactLabel": "Телефон или Telegram",
+      "contactLabel": "Телефон или Telegram/MAX",
       "contactLengthMessage": "Контакт должен содержать от 3 до 120 символов.",
       "contactMax": 120,
       "contactMin": 3,
@@ -205,14 +247,14 @@ const sanityContentSnapshot = {
       },
       "idleMessage": "",
       "legalLinkLabel": "Политикой конфиденциальности",
-      "legalPrefix": "Отправляя заявку, я даю согласие на обработку персональных данных в соответствии с ",
+      "legalPrefix": "Отправляя заявку, я даю согласие на обработку персональных данных в соответствии с ",
       "legalSuffix": ".",
       "messageHint": "От 5 до 1000 символов.",
       "messageLabel": "Что Вы хотите улучшить в речи?",
       "messageLengthMessage": "Запрос должен содержать от 5 до 1000 символов.",
       "messageMax": 1000,
       "messageMin": 5,
-      "messagePlaceholder": "Например: увереннее выступать на рабочих встречах",
+      "messagePlaceholder": "Например: увереннее себя чувствовать на публике",
       "messageRequiredMessage": "Опишите, что Вы хотите улучшить в речи.",
       "nameHint": "От 2 до 80 символов.",
       "nameLabel": "Ваше имя",
@@ -244,35 +286,38 @@ const sanityContentSnapshot = {
     },
     "linksSettings": {
       "dzen": {
-        "isVisible": false,
-        "url": "https://dzen.ru/your_blog"
+        "isVisible": true,
+        "url": "https://dzen.ru/user/cvi3b3nfjfqrwbqlmv3du11nm4u"
       },
-      "instagram": null,
+      "instagram": {
+        "isVisible": false,
+        "url": null
+      },
       "portfolio": {
         "isVisible": true,
         "url": "https://disk.yandex.ru/d/XZpaXmQIVoS0Ig"
       },
       "primaryTelegram": {
-        "isVisible": false,
-        "url": "https://t.me/your_speaker_one_bot"
+        "isVisible": true,
+        "url": "https://t.me/Speaker_One_Subscription_bot"
       },
       "rutube": null,
       "telegramBot": {
-        "isVisible": false,
-        "url": "https://t.me/your_speaker_one_bot?start=channel"
+        "isVisible": true,
+        "url": "https://t.me/Speaker_One_Subscription_bot"
       },
       "telegramChannel": {
-        "isVisible": false,
-        "url": "https://t.me/your_channel"
+        "isVisible": true,
+        "url": "https://t.me/Speaker_One_Subscription_bot"
       },
       "vkontakte": {
-        "isVisible": false,
-        "url": "https://vk.com/your_profile"
+        "isVisible": true,
+        "url": "https://vk.com/sp_one"
       },
       "whatsapp": null,
       "youtube": {
-        "isVisible": false,
-        "url": "https://youtube.com/your_channel"
+        "isVisible": true,
+        "url": "https://www.youtube.com/channel/UCs9xjLgzA_QcmEFsHCsjhVw"
       }
     },
     "manifesto": {
@@ -285,10 +330,24 @@ const sanityContentSnapshot = {
       "ctaLabel": "Записаться на консультацию",
       "ctaTarget": null,
       "eyebrow": "// Почему речь имеет значение",
-      "heading": "Уверенная речь — не врождённый талант. Её можно тренировать. На занятиях мы учимся ясно собирать мысли, работать с голосом и спокойно держаться перед людьми. Всё сразу переносим в Ваши выступления, переговоры, видео и рабочие встречи.",
-      "image": null,
+      "heading": "Уверенная речь - это навык, который развивается\nчерез практику. На занятиях Вы научитесь говорить спокойно, уверенно и по существу, чтобы чувствовать себя уверенно во время встреч, переговоров, выступлений и обычного общения.",
+      "image": {
+        "_id": "media-philosophy",
+        "_type": "media",
+        "alt": "Андрей Чернышев с книгой во время подготовки к выступлению",
+        "crop": null,
+        "dimensions": {
+          "_type": "sanity.imageDimensions",
+          "aspectRatio": 0.66650390625,
+          "height": 2048,
+          "width": 1365
+        },
+        "hotspot": null,
+        "title": "Фото раздела «Философия»",
+        "url": "https://cdn.sanity.io/images/2qt9p4bo/production/5fe55782f0318c8bb8b1586c3eea7487cba404ce-1365x2048.jpg"
+      },
       "isVisible": true,
-      "mainText": "Хорошая идея может потеряться, если её трудно объяснить. Даже большой опыт не помогает, когда слушателю сложно понять главную мысль."
+      "mainText": "Можно быть сильным специалистом и прекрасно разбираться в своём деле. Но если Вы не умеете ясно доносить свои мысли, презентовать себя и показывать ценность своей работы, вас могу не понять. Тогда выбор сделают не в пользу лучшего специалиста, а в пользу того, кто сумел понятнее рассказать о себе."
     },
     "navigation": {
       "consultationAction": null,
@@ -370,7 +429,21 @@ const sanityContentSnapshot = {
       "description": "Развивайте уверенную речь, голос и подачу для выступлений, переговоров, камеры и рабочих встреч. Индивидуальная практика на Ваших задачах.",
       "locale": "ru_RU",
       "ogDescription": "Развивайте уверенную речь, голос и подачу для выступлений, переговоров, камеры и рабочих встреч. Индивидуальная практика на Ваших задачах.",
-      "ogImage": null,
+      "ogImage": {
+        "_id": "media-og",
+        "_type": "media",
+        "alt": "Андрей Чернышев, основатель Speaker One",
+        "crop": null,
+        "dimensions": {
+          "_type": "sanity.imageDimensions",
+          "aspectRatio": 0.66650390625,
+          "height": 2048,
+          "width": 1365
+        },
+        "hotspot": null,
+        "title": "Изображение для социальных сетей",
+        "url": "https://cdn.sanity.io/images/2qt9p4bo/production/36a3c83ba57b565337dee8020dd193fafc161a35-1365x2048.jpg"
+      },
       "ogTitle": "Speaker One — ораторское мастерство и уверенная речь",
       "siteName": "Speaker One",
       "socialLinks": null,
@@ -401,7 +474,21 @@ const sanityContentSnapshot = {
       "ctaTitle": "Разберите свою речь на реальной задаче",
       "description": "Четыре знакомые ситуации помогут понять, что происходит с Вашей речью на совещании, во время презентации, перед камерой и перед выступлением. Выберите ответ, который больше похож на Вашу обычную реакцию.",
       "eyebrow": "// Speech Lab · 1–2 минуты",
-      "image": null,
+      "image": {
+        "_id": "media-work",
+        "_type": "media",
+        "alt": "Андрей Чернышев за ноутбуком во время подготовки к выступлению",
+        "crop": null,
+        "dimensions": {
+          "_type": "sanity.imageDimensions",
+          "aspectRatio": 0.66650390625,
+          "height": 2048,
+          "width": 1365
+        },
+        "hotspot": null,
+        "title": "Дополнительное фото эксперта",
+        "url": "https://cdn.sanity.io/images/2qt9p4bo/production/19097eac2bf469ebb5ee74dbbfec5062c541b21d-1365x2048.jpg"
+      },
       "progressAriaLabel": "Прогресс речевой диагностики",
       "questions": [
         {
