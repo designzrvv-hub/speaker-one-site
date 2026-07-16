@@ -1,0 +1,23 @@
+{
+  "name": "speaker-one-sanity-studio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "seed:dry": "node scripts/seed-content.js",
+    "seed:write": "sanity exec scripts/seed-content-write.js --with-user-token",
+    "seed:overwrite": "sanity exec scripts/seed-content-overwrite.js --with-user-token",
+    "content:status": "sanity exec scripts/content-status.js --with-user-token",
+    "publish:content:dry": "sanity exec scripts/publish-content.js --with-user-token",
+    "publish:content": "sanity exec scripts/publish-content-write.js --with-user-token"
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "sanity": "^6.5.0",
+    "styled-components": "^6.4.3"
+  }
+}

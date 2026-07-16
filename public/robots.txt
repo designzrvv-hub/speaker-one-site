@@ -1,0 +1,4 @@
+# Generated from the validated build-time content snapshot by vite.config.js.
+User-agent: *
+Allow: /
+Sitemap: https://speaker-one.example/sitemap.xml

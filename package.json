@@ -1,0 +1,37 @@
+{
+  "name": "speaker-one-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "content:fetch": "node scripts/fetch-sanity-content.mjs",
+    "content:seed": "node studio/scripts/seed-content.js",
+    "predev": "npm run content:fetch",
+    "dev": "vite",
+    "predev:visual": "npm run content:fetch",
+    "dev:visual": "node scripts/visual-preview-server.mjs",
+    "prebuild": "npm run content:fetch",
+    "build": "vite build",
+    "test:content": "node --test tests/contentAdapter.test.mjs tests/previewAnnotations.test.mjs",
+    "test:lead": "node --test tests/leadEndpoint.test.mjs",
+    "lead:test": "node scripts/test-lead-endpoint.mjs",
+    "preview": "vite preview",
+    "preview:visual": "node scripts/visual-preview-server.mjs --production"
+  },
+  "dependencies": {
+    "@sanity/client": "^7.23.2",
+    "@sanity/preview-url-secret": "^4.0.8",
+    "@sanity/visual-editing": "^5.5.0",
+    "@vitejs/plugin-react": "latest",
+    "gsap": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "tailwindcss": "3.4.17"
+  }
+}

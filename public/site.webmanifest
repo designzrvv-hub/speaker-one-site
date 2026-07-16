@@ -1,0 +1,19 @@
+{
+  "name": "Speaker One",
+  "short_name": "Speaker One",
+  "description": "Развивайте уверенную речь, голос и подачу для выступлений, переговоров, камеры и рабочих встреч. Индивидуальная практика на Ваших задачах.",
+  "lang": "ru",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#050508",
+  "theme_color": "#050508",
+  "icons": [
+    {
+      "src": "/logo-full.png",
+      "sizes": "2048x2048",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
